@@ -302,3 +302,10 @@ Always-on infrastructure
 Implicit trust models
 
 And it scales cleanly as the lab grows.
+
+## Status
+
+Actively implemented and documented as part of a security-focused homelab.
+
+
+

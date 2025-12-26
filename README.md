@@ -3,20 +3,67 @@ Secure Wake-on-LAN with Proxmox, OPNsense, and WireGuard
 Incremental, security-first implementation
 
 Overview
+Secure Remote Management Homelab
 
-This project implements secure, on-demand access to a Proxmox server using Wake-on-LAN (WoL) and WireGuard, with OPNsense acting as the control plane.
+A secure home lab environment with Proxmox, OPNsense firewall segmentation, and WireGuard VPN for controlled remote access and Wake-on-LAN workflows.
 
-The primary objective is to reduce idle power usage while ensuring the Proxmox host can only be woken and accessed through authenticated, encrypted access.
+🔍 Overview
 
-Rather than exposing management services or relying on ad-hoc scripts, the design follows:
+This project demonstrates a secure remote access and systems management setup using virtualization and network security tools. It was built as a learning platform to gain real-world experience in Linux systems, firewalls, networking, and secure remote administration — skills relevant for IT support, systems, and networking roles.
 
-Firewall-centric architecture
+🛠 Key Features
 
-Least-privilege access
+Proxmox virtualization for hosting multiple VMs and services.
 
-Clear trust boundaries
+OPNsense firewall for secure network segmentation and traffic control.
 
-Fail-safe defaults (deny by default)
+WireGuard VPN to enable secure remote access to internal services.
+
+Secure Wake-on-LAN (WoL) configurations that are only available through authenticated VPN sessions.
+
+Designed with best practices for secure access and least-privilege network controls. 
+GitHub
++1
+
+🧠 What You’ll Learn
+
+This project showcases hands-on experience with:
+
+Linux systems and command-line tools
+
+VPN setup and key-based authentication
+
+Firewall rule creation and traffic segmentation
+
+Virtual machine deployment and networking
+
+Secure remote administration techniques
+
+📦 Tech Stack
+
+Proxmox VE – Virtualization platform
+
+OPNsense – Firewall & router platform
+
+WireGuard – VPN solution for secure remote access
+
+Bash/Linux CLI – Scripting and system troubleshooting
+
+VLAN and secure routing concepts
+
+🚀 How It Works
+
+Proxmox hosts virtual machines and provides virtualization resources.
+
+OPNsense manages network segments (LAN, IoT, VPN) and firewall rules.
+
+WireGuard provides a secure VPN tunnel to connect remotely.
+
+Once connected, authorized users can send Wake-on-LAN packets to power systems on the internal network securely.
+
+
+
+
 
 Environment
 

@@ -232,4 +232,17 @@ After corrections:
 
 ✅ Zero Trust principles upheld
 
+### Administration Anti-Lockout Rule
+
+By default, OPNsense injects an automatic anti-lockout rule that allows
+administrative access from the LAN interface regardless of firewall rules
+or service listening interfaces.
+
+This rule was explicitly disabled to enforce VPN-only administrative access.
+
+Behavior verified:
+- VPN down → Web GUI inaccessible
+- VPN up → Web GUI accessible over WG_HOME only
+
+This confirms proper enforcement of remote-only administration.
 

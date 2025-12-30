@@ -246,3 +246,18 @@ Behavior verified:
 
 This confirms proper enforcement of remote-only administration.
 
+### Configuration Backups and Recovery
+
+Before disabling the OPNsense administration anti-lockout rule and enforcing
+VPN-only management access, full configuration backups were exported.
+
+Two snapshots are maintained:
+
+- `opnsense-pre-vpn-admin-lockdown.xml`
+  Baseline configuration prior to management-plane hardening
+
+- `opnsense-vpn-only-admin-working.xml`
+  Current hardened configuration with VPN-only GUI and SSH access
+
+This ensures immediate recovery via console or VM access if required.
+

@@ -1,0 +1,4 @@
+# OPNsense / firewall backups (contain secrets)
+backups/*.xml
+*.xml
+
